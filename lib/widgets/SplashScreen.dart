@@ -8,7 +8,9 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SvgPicture.asset("assets/splashscreen.svg"),
+      body: SizedBox(
+        width: double.infinity,
+        child: SvgPicture.asset("assets/splashscreen.svg",fit: BoxFit.fitWidth,)),
     );
   }
 }
